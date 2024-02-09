@@ -3,6 +3,7 @@
   --acabamento: #000;
   --txtmenu: #8f8e8e;
   --txtdestaque: #00ff08;
+  --span: #0815c7;
   --fontTitulo: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   --fontTxt: "Poppins", sans-serif;
@@ -13,12 +14,11 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: var(--fontTitulo);
   box-sizing: border-box;
 }
 
 body {
-  /* height: 100vh; */
+   height: 100vh;
 }
 
 .flex {
@@ -45,6 +45,18 @@ body {
 .btn-contato a:hover {
   transform: scale(1.1);
   box-shadow: 0 0 8px var(--txtdestaque);
+}
+
+.titulo{
+  text-align: center;
+  padding-bottom: 60px;
+  font-size: 2em;
+  font-weight: bolder;
+  font-family: var(--fontTitulo);
+}
+
+.titulo span{
+  color: var(--span);
 }
 
 /* ESTILO CABEÇALHO/MENUN */
@@ -81,6 +93,14 @@ header .menu-desktop a:hover {
   color: var(--txtgeral);
 }
 
+header .menu-desktop #pagina-atual{
+  color: var(--txtgeral);
+  border: 1px solid #f1f1f14d;
+  padding: 3px 10px;
+  border-radius: 30px;
+  box-shadow: 0 0 10px #f1f1f165;
+}
+
 /* ESTILOS TOPO MAIN */
 
 
@@ -99,7 +119,7 @@ header .menu-desktop a:hover {
 
 .img-fundo {
     position: relative;
-    height: 100vh;
+    height: 89.2vh;
     background-image: url("../images/imgemfundo.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -171,6 +191,33 @@ header .menu-desktop a:hover {
     padding: 0 20px;
 }
 
--d3d9ex  -novid -high
+
+/* ESTILO MEIO DO SITE */
+
+.txt-meio-site{
+  background-color: #f1f1f1;
+  padding: 80px 0;
+}
+
+.txt-meio-site .flex{
+  gap: 60px;
+  align-items: center;
+}
+
+.txt-meio-site .txt-sobre-evento > p{
+   font-size: 1.1em;
+   line-height: 1.5em;
+   padding-bottom: 10px;
+   text-indent: 1.3em;
+   font-family: var(--fontTxt);
+   text-align: justify;
+   font-weight: 500;
+}
+
+.txt-meio-site .img-evento  img{
+  border-radius: 30px;
+}
+
+
 
 
