@@ -18,7 +18,7 @@
 }
 
 body {
-   height: 100vh;
+   height: 100%;
 }
 
 .flex {
@@ -64,9 +64,10 @@ body {
 header {
   background-color: var(--acabamento);
   padding: 40px 4%;
+  /* width: 100%; */
   position: sticky;
   top: 0;
-  z-index: 999999999;
+  z-index: 1000;
 }
 
 header > .interface {
@@ -119,7 +120,7 @@ header .menu-desktop #pagina-atual{
 
 .img-fundo {
     position: relative;
-    height: 89.2vh;
+    height: 100vh;
     background-image: url("../images/imgemfundo.jpg");
     background-position: center;
     background-repeat: no-repeat;
