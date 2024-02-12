@@ -18,7 +18,7 @@
   }
   
   body {
-     height: 100vh;
+    height: 100%;
   }
   
   .flex {
@@ -47,7 +47,7 @@
     box-shadow: 0 0 8px var(--txtdestaque);
   }
   
-  .titulo{
+  .titulo {
     text-align: center;
     padding-bottom: 50px;
     font-size: 2em;
@@ -55,19 +55,11 @@
     font-family: var(--fontTitulo);
   }
   
-  .titulo span{
+  .titulo span {
     color: var(--span);
   }
   
   /* ESTILO CABEÇALHO/MENUN */
-  
-  header {
-    background-color: var(--acabamento);
-    padding: 40px 4%;
-    position: sticky;
-    top: 0;
-    z-index: 999999999;
-  }
   
   header > .interface {
     display: flex;
@@ -76,8 +68,24 @@
     flex-wrap: wrap;
   }
   
+  header {
+    display: flex;
+    background-color: var(--acabamento);
+    padding: 2rem;
+    height: 9.375rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
   header .menu-desktop {
     margin: auto;
+    padding: 0 15px;
+  }
+  
+  header .menu-desktop .menu{
+    display: flex;
+    align-items: center;
   }
   
   header .menu-desktop a {
@@ -93,7 +101,7 @@
     color: var(--txtgeral);
   }
   
-  header .menu-desktop #pagina-atual{
+  header .menu-desktop #pagina-atual {
     color: var(--txtgeral);
     border: 1px solid #f1f1f14d;
     padding: 3px 10px;

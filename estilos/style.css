@@ -65,7 +65,6 @@ header > .interface {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
 }
 
 header {
@@ -73,9 +72,14 @@ header {
   background-color: var(--acabamento);
   padding: 2rem;
   height: 9.375rem;
-  position: sticky;
+  position: fixed;
+  width: 100%;
   top: 0;
   z-index: 1000;
+}
+
+header .logo-site {
+  margin: 0 20px 0 0;
 }
 
 header .menu-desktop {
@@ -83,11 +87,26 @@ header .menu-desktop {
   padding: 0 15px;
 }
 
+header .menu-desktop .menu {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  gap: 0.5rem;
+}
+
+.label-menu,
+.checkbox {
+  display: none;
+  color: var(--txtmenu);
+  font-weight: 600;
+  font-size: 1rem;
+}
+
 header .menu-desktop a {
   text-decoration: none;
   color: var(--txtmenu);
-  margin: 0 30px;
-  display: inline-block;
+  padding: 1rem;
+  display: block;
   transition: 0.2s;
 }
 
@@ -99,7 +118,7 @@ header .menu-desktop a:hover {
 header .menu-desktop #pagina-atual {
   color: var(--txtgeral);
   border: 1px solid #f1f1f14d;
-  padding: 3px 10px;
+  padding: 5px 6px;
   border-radius: 30px;
   box-shadow: 0 0 10px #f1f1f165;
 }
@@ -329,4 +348,83 @@ header .menu-desktop #pagina-atual {
   font-weight: 700;
   border-bottom: 1px solid #000;
   padding-bottom: 20px;
+}
+
+@media (max-width: 1100px) {
+  
+
+  header .btn-contato {
+    display: none;
+  }
+
+  header .menu-desktop .menu {
+    display: block;
+    position: absolute;
+    top: 9.375rem;
+    left: 0;
+    background: var(--acabamento);
+    text-align: center;
+    width: 100%;
+    height: 0;
+    z-index: 8888;
+    visibility: hidden;
+    overflow-y: hidden;
+    transition: 0.5s;
+    
+  }
+
+  header .menu-desktop .menu a{
+    padding: 1rem 0;
+    margin-inline: 5rem;
+    border-bottom: 0.0625rem solid #8f8e8e4c;
+    border-radius: 0;
+  }
+
+  header .menu-desktop .label-menu {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding-block: 1rem;
+    cursor: pointer;
+  }
+
+  .hamburguer {
+    border-top: 0.125rem solid;
+    width: 1.25rem;
+  }
+  .hamburguer::before, .hamburguer::after{
+    content: " ";
+    display: block;
+    width: 1.25rem;
+    height: 0.125rem;
+    background: currentColor;
+    margin-top: 0.3125rem;
+    position: relative;
+    transition: 0.3s;
+  }
+
+  .checkbox:checked ~ .menu{
+    height: calc(100vh - 9.375rem);
+    visibility: visible;
+    overflow-y: auto;
+  }
+
+  .checkbox:checked ~ .label-menu .hamburguer{
+    border-top-color: transparent;
+  }
+
+  .checkbox:checked ~ .label-menu .hamburguer::before{
+    transform: rotate(135deg);
+  }
+
+  .checkbox:checked ~ .label-menu .hamburguer::after{
+    transform: rotate(-135deg);
+    top: -0.4375rem;
+  }
+
+  .txt-topo-site .data{
+    flex-direction: column;
+    align-items: center;
+  }
+
 }
