@@ -1,110 +1,227 @@
 :root {
-    --txtgeral: #f1f1f1;
-    --acabamento: #000;
-    --txtmenu: #8f8e8e;
-    --txtdestaque: #00ff08;
-    --span: #0815c7;
-    --fontTitulo: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    --fontTxt: "Poppins", sans-serif;
+  --txtgeral: #f1f1f1;
+  --acabamento: #000;
+  --txtmenu: #8f8e8e;
+  --txtdestaque: #00ff08;
+  --span: #0815c7;
+  --fontTitulo: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  --fontTxt: "Poppins", sans-serif;
+}
+
+/* ESTILOS GERAIS */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+}
+
+.flex {
+  display: flex;
+}
+
+.interface {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.btn-contato a {
+  text-decoration: none;
+  color: var(--acabamento);
+  background-color: var(--txtdestaque);
+  padding: 10px 40px;
+  font-family: var(--fontTxt);
+  font-weight: 600;
+  border-radius: 20px;
+  display: inline-block;
+  transition: 0.2s;
+}
+
+.btn-contato a:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 8px var(--txtdestaque);
+}
+
+.titulo {
+  text-align: center;
+  padding-bottom: 50px;
+  font-size: 2em;
+  font-weight: bolder;
+  font-family: var(--fontTitulo);
+}
+
+.titulo span {
+  color: var(--span);
+}
+
+/* ESTILO CABEÇALHO/MENUN */
+
+header > .interface {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header {
+  display: flex;
+  background-color: var(--acabamento);
+  padding: 2rem;
+  height: 9.375rem;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+header .logo-site {
+  margin: 0 20px 0 0;
+}
+
+header .menu-desktop {
+  margin: auto;
+  padding: 0 15px;
+}
+
+header .menu-desktop .menu {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  gap: 0.5rem;
+}
+
+.label-menu,
+.checkbox {
+  display: none;
+  color: var(--txtmenu);
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+header .menu-desktop a {
+  text-decoration: none;
+  color: var(--txtmenu);
+  padding: 1rem;
+  display: block;
+  transition: 0.2s;
+}
+
+header .menu-desktop a:hover {
+  transform: scale(1.1);
+  color: var(--txtgeral);
+}
+
+header .menu-desktop #pagina-atual {
+  color: var(--txtgeral);
+  border: 1px solid #f1f1f14d;
+  padding: 5px 6px;
+  border-radius: 30px;
+  box-shadow: 0 0 10px #f1f1f165;
+}
+
+/* ESTILO TABELA */
+
+.tabela .interface {
+  padding: 40px 4%;
+}
+
+.tabela .flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tabela table {
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+
+.tabela table tr td, th {
+  padding: 1.6rem;
+  text-align: center;
+  font-size: 1rem;
+  font-family: var(--fontTxt);
+  border-radius: 10px;
+  
+}
+
+@media (max-width: 1100px) {
+  header .btn-contato {
+    display: none;
   }
-  
-  /* ESTILOS GERAIS */
-  
-  * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    height: 100%;
-  }
-  
-  .flex {
-    display: flex;
-  }
-  
-  .interface {
-    max-width: 1280px;
-    margin: 0 auto;
-  }
-  
-  .btn-contato a {
-    text-decoration: none;
-    color: var(--acabamento);
-    background-color: var(--txtdestaque);
-    padding: 10px 40px;
-    font-family: var(--fontTxt);
-    font-weight: 600;
-    border-radius: 20px;
-    display: inline-block;
-    transition: 0.2s;
-  }
-  
-  .btn-contato a:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 8px var(--txtdestaque);
-  }
-  
-  .titulo {
+
+  header .menu-desktop .menu {
+    display: block;
+    position: absolute;
+    top: 9.375rem;
+    left: 0;
+    background: var(--acabamento);
     text-align: center;
-    padding-bottom: 50px;
-    font-size: 2em;
-    font-weight: bolder;
-    font-family: var(--fontTitulo);
+    width: 100%;
+    height: 0;
+    z-index: 8888;
+    visibility: hidden;
+    overflow-y: hidden;
+    transition: 0.5s;
   }
-  
-  .titulo span {
-    color: var(--span);
+
+  header .menu-desktop .menu a {
+    padding: 1rem 0;
+    margin-inline: 5rem;
+    border-bottom: 0.0625rem solid #8f8e8e4c;
+    border-radius: 0;
   }
-  
-  /* ESTILO CABEÇALHO/MENUN */
-  
-  header > .interface {
+
+  header .menu-desktop .label-menu {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding-block: 1rem;
+    cursor: pointer;
   }
-  
-  header {
-    display: flex;
-    background-color: var(--acabamento);
-    padding: 2rem;
-    height: 9.375rem;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+
+  .hamburguer {
+    border-top: 0.125rem solid;
+    width: 1.25rem;
   }
-  
-  header .menu-desktop {
-    margin: auto;
-    padding: 0 15px;
+  .hamburguer::before,
+  .hamburguer::after {
+    content: " ";
+    display: block;
+    width: 1.25rem;
+    height: 0.125rem;
+    background: currentColor;
+    margin-top: 0.3125rem;
+    position: relative;
+    transition: 0.3s;
   }
-  
-  header .menu-desktop .menu{
-    display: flex;
+
+  .checkbox:checked ~ .menu {
+    height: calc(100vh - 9.375rem);
+    visibility: visible;
+    overflow-y: auto;
+  }
+
+  .checkbox:checked ~ .label-menu .hamburguer {
+    border-top-color: transparent;
+  }
+
+  .checkbox:checked ~ .label-menu .hamburguer::before {
+    transform: rotate(135deg);
+  }
+
+  .checkbox:checked ~ .label-menu .hamburguer::after {
+    transform: rotate(-135deg);
+    top: -0.4375rem;
+  }
+
+  .txt-topo-site .data {
+    flex-direction: column;
     align-items: center;
   }
-  
-  header .menu-desktop a {
-    text-decoration: none;
-    color: var(--txtmenu);
-    margin: 0 30px;
-    display: inline-block;
-    transition: 0.2s;
-  }
-  
-  header .menu-desktop a:hover {
-    transform: scale(1.1);
-    color: var(--txtgeral);
-  }
-  
-  header .menu-desktop #pagina-atual {
-    color: var(--txtgeral);
-    border: 1px solid #f1f1f14d;
-    padding: 3px 10px;
-    border-radius: 30px;
-    box-shadow: 0 0 10px #f1f1f165;
-  }
+}
