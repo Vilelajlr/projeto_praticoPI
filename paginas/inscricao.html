@@ -73,67 +73,66 @@
       </section>
 
      
-        <section class="dados-pessoais">
-          <div class="interface">
-            <div class="flex">
-              <div class="dados">
-                <fieldset>
-                  <legend>Informe <span>Seus Dados</span></legend>
-                  <div class="dados-obrigatorios">
-                    <div class="nome-input">
-                      <label for="nome">Nome*: </label>
-                      <input type="text" name="nome" id="nome" required placeholder="Digite o seu nome"/>
-                      <span></span>
-                    </div>
-                    <div class="email-input">
-                      <label for="e-mail">Email*: </label>
-                      <input type="email" name="e-mail" id="e-mail" required placeholder="Digite o seu e-mail" />
-                      <span></span>
-                    </div>
-                    <div class="cpf-input">
-                      <label for="cpf">CPF*: </label>
-                      <input type="text" name="cpf" id="cpf" required placeholder="Digite o seu cpf"/>
-                      <span></span>
-                    </div>
-                  </div><!--dados-obrigatorios-->
-        
-                  <div class="sou-estudante">
-                    <input type="radio" name="estudante" id="estudante" />
-                    <label for="estudante">Sou Estudante</label>
+      <section class="dados-pessoais">
+        <div class="interface">
+          <div class="flex">
+            <div class="dados">
+              <fieldset>
+                <legend>Informe <span>Seus Dados</span></legend>
+                <div class="dados-obrigatorios">
+                  <div class="nome-input">
+                    <label for="nome">Nome*: </label>
+                    <input type="text" name="nome" id="nome" required placeholder="Digite o seu nome"/>
+                    <span></span>
+                  </div>
+                  <div class="email-input">
+                    <label for="e-mail">Email*: </label>
+                    <input type="email" name="e-mail" id="e-mail" required placeholder="Digite o seu e-mail" />
+                    <span></span>
+                  </div>
+                  <div class="cpf-input">
+                    <label for="cpf">CPF*: </label>
+                    <input type="text" name="cpf" id="cpf" required placeholder="Digite o seu cpf"/>
+                    <span></span>
+                  </div>
+                </div><!--dados-obrigatorios-->
+      
+                <div class="sou-estudante">
+                  <input type="radio" name="estudante" id="estudante" />
+                  <label for="estudante">Sou Estudante</label>
+                  <span>
+                    <input type="radio" name="estudante" id="nao-estudante" />
+                    <label for="nao-estudante">Não sou Estudante</label>
+                  </span>
+                  <div class="marcado-estudante">
+                    <label class="universidade"
+                      >Informe a sua Universidade:
+                      <select name="uni" id="selec">
+                        <option value="">Selecione</option>
+                        <option value="ufu">
+                          Universidade Federal de Uberlândia - UFU
+                        </option>
+                        <option value="unifucamp">
+                          Centro Universitário Mário Palmério - UNIFUCAMP
+                        </option>
+                        <option value="outro">Outras</option>
+                      </select>
+                    </label>
                     <span>
-                      <input type="radio" name="estudante" id="nao-estudante" />
-                      <label for="nao-estudante">Não sou Estudante</label>
-                    </span>
-                    <div class="marcado-estudante">
-                      <label class="universidade"
-                        >Informe a sua Universidade:
-                        <select name="uni" id="selec">
-                          <option value="">Selecione</option>
-                          <option value="ufu">
-                            Universidade Federal de Uberlândia - UFU
-                          </option>
-                          <option value="unifucamp">
-                            Centro Universitário Mário Palmério - UNIFUCAMP
-                          </option>
-                          <option value="outro">Outras</option>
-                        </select>
-                      </label>
-                      <span>
-                      <label for="outros">Se outras, Qual:</label>
-                      <input type="text" name="outros" id="outros">
-                      </span><!--mat-->
-                      <span>
-                        <label for="matricula">Informe o Número da sua Matrícula:</label>
-                        <input type="text" name="matricula" id="matricula" />
-                      </span><!--mat-->
-                    </div><!--marcado-estudante-->
-                  </div><!--sou-estudante-->
-                </fieldset>
-              </div><!--dados-->
-            </div><!--FLEX-->
-          </div>
-          <!--interface-->
-        </section><!--dados-pessoais-->
+                    <label for="outros">Se outras, Qual:</label>
+                    <input type="text" name="outros" id="outros">
+                    </span><!--mat-->
+                    <span>
+                      <label for="matricula">Informe o Número da sua Matrícula:</label>
+                      <input type="text" name="matricula" id="matricula" />
+                    </span><!--mat-->
+                  </div><!--marcado-estudante-->
+                </div><!--sou-estudante-->
+              </fieldset>
+            </div><!--dados-->
+          </div><!--FLEX-->
+        </div><!--interface-->
+      </section><!--dados-pessoais-->
 
       
       <section class="endereco">
