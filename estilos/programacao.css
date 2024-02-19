@@ -65,6 +65,7 @@ header > .interface {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 header {
@@ -222,7 +223,14 @@ th {
   padding-bottom: 20px;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1150px) {
+
+  header .interface{
+    align-items: center;
+    justify-content: center;
+  }
+
+
   header .btn-contato {
     display: none;
   }
