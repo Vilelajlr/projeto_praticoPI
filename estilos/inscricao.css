@@ -146,6 +146,7 @@ header .menu-desktop .menu {
 }
 
 header .menu-desktop a {
+  font-family: var(--fontTxt);
   text-decoration: none;
   color: var(--txtmenu);
   padding: 1rem;
@@ -284,12 +285,13 @@ td {
 }
 .atividades .atividades-do-dia a{
   text-decoration: none;
-  color: var(--txtgeral);
+  color: var(--acabamento);
   padding: 5px 10px;
   border-radius: 30px;
   display: inline-block;
   transition: 0.2s;
   margin-left: 5px;
+  font-family: var(--fontTxt);
 }
 
 .atividades .atividades-do-dia #ufu{
@@ -361,7 +363,7 @@ td {
   font-family: var(--fontTxt);
   font-weight: 600;
   font-size: 1rem;
-  color: var(--txtgeral);
+  color: var(--acabamento);
   background-color: var(--txtdestaque);
   border: 0;
   outline: none;
