@@ -104,6 +104,7 @@ header .menu-desktop .menu {
 }
 
 header .menu-desktop a {
+  font-family: var(--fontTxt);
   text-decoration: none;
   color: var(--txtmenu);
   padding: 1rem;
