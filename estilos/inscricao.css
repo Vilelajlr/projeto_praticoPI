@@ -11,11 +11,11 @@
 
 /* scrollbar */
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 10px;
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
   background-color: var(--txtdestaque);
   border-radius: 50px;
 }
@@ -28,16 +28,16 @@
   box-sizing: border-box;
 }
 
-fieldset{
+fieldset {
   padding: 50px;
   border-radius: 30px;
 }
 
-legend span{
+legend span {
   color: var(--txtdestaque);
 }
 
-legend{
+legend {
   color: var(--txtgeral);
   padding: 0 10px;
   text-align: center;
@@ -112,7 +112,7 @@ body {
 
 /* ESTILO CABEÇALHO/MENUN */
 
-header > .interface {
+header>.interface {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -217,9 +217,9 @@ td {
   display: block;
 }
 
-/* ESTILO DADOS */ 
+/* ESTILO DADOS */
 
-.dados fieldset{
+.dados fieldset {
   display: flex;
   align-items: center;
   gap: 30px;
@@ -233,7 +233,8 @@ td {
 }
 
 
-.dados-obrigatorios, .input-endereco {
+.dados-obrigatorios,
+.input-endereco {
   display: flex;
   flex-direction: column;
   margin-bottom: 30px;
@@ -249,12 +250,14 @@ td {
   display: inline-block;
 }
 
-.dados-pessoais input, .input-endereco input {
+.dados-pessoais input,
+.input-endereco input {
   border-radius: 5px;
   padding: 5px;
 }
 
-.dados-pessoais .dados label, .input-endereco label{
+.dados-pessoais .dados label,
+.input-endereco label {
   flex: 1;
   text-align: left;
   margin: 10px 0;
@@ -282,7 +285,7 @@ td {
   margin: 10px 0;
 }
 
-.sou-estudante .marcado-estudante select{
+.sou-estudante .marcado-estudante select {
   border-radius: 30px;
   padding: 5px;
   width: 200px;
@@ -291,10 +294,11 @@ td {
 
 /* estilo atividades */
 
-.atividades .interface{
+.atividades .interface {
   padding: 30px 4%;
 }
-.atividades .atividades-do-dia a{
+
+.atividades .atividades-do-dia a {
   text-decoration: none;
   color: var(--acabamento);
   padding: 5px 10px;
@@ -305,36 +309,37 @@ td {
   font-family: var(--fontTxt);
 }
 
-.atividades .atividades-do-dia #ufu{
- text-decoration: underline;
+.atividades .atividades-do-dia #ufu {
+  text-decoration: underline;
 }
 
-.atividades .atividades-do-dia #ufu:hover{
+.atividades .atividades-do-dia #ufu:hover {
   transform: scale(1.1);
 }
 
 
-.atividades .atividades-do-dia #prog{
+.atividades .atividades-do-dia #prog {
   background-color: var(--txtdestaque);
 }
 
 
-.atividades .atividades-do-dia #prog:hover{
+.atividades .atividades-do-dia #prog:hover {
   transform: scale(1.1);
   box-shadow: 0 0 8px var(--txtdestaque);
 }
 
-.atividades .flex{
+.atividades .flex {
   align-items: center;
   justify-content: center;
 }
 
 .atividades .atividades-input span {
   display: block;
-  margin: 20px 0 ;
+  margin: 20px 0;
 }
 
-.atividades .input-atividades p, label{
+.atividades .input-atividades p,
+label {
   margin-bottom: 15px;
   font-size: 1rem;
   font-weight: 600;
@@ -342,33 +347,33 @@ td {
   font-family: var(--fontTxt);
 }
 
-.atividades-input{
+.atividades-input {
   margin-top: 80px;
 }
 
-.atividades .atividades-input label{
-  border-bottom: 1px  solid var(--txtgeral);
+.atividades .atividades-input label {
+  border-bottom: 1px solid var(--txtgeral);
 }
 
-.atividades .atividades-input .dia-atv{
+.atividades .atividades-input .dia-atv {
   display: inline;
   color: var(--txtdestaque);
 }
 
 /* ESTILO BOTOES */
 
-.interface-button{
+.interface-button {
   padding: 30px 4%;
 }
 
-.btn-enviar-limpar{
+.btn-enviar-limpar {
   display: flex;
   justify-content: center;
   gap: 20px;
 
 }
 
-.btn-enviar-limpar input{
+.btn-enviar-limpar input {
   padding: 10px 20px;
   border-radius: 30px;
   font-family: var(--fontTxt);
@@ -381,7 +386,8 @@ td {
   transition: 0.2s;
 
 }
-.btn-enviar-limpar input:hover{
+
+.btn-enviar-limpar input:hover {
   transform: scale(1.1);
   box-shadow: 0 0 8px var(--txtdestaque);
 }
@@ -448,7 +454,7 @@ td {
 
 
 
-  header .interface{
+  header .interface {
     align-items: center;
     justify-content: center;
   }
@@ -491,6 +497,7 @@ td {
     border-top: 0.125rem solid;
     width: 1.25rem;
   }
+
   .hamburguer::before,
   .hamburguer::after {
     content: " ";
