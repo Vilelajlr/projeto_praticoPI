@@ -46,6 +46,16 @@ body {
   margin: 0 auto;
 }
 
+table {
+  width: 100%;
+}
+
+table,td,th {
+  
+  border-collapse: collapse;
+  border: 1px solid #000;
+}
+
 .btn-contato a {
   text-decoration: none;
   color: var(--acabamento);
@@ -155,21 +165,12 @@ main {
   justify-content: space-between;
 }
 
-.tabela .content {
-  height: 450px;
-  width: 850px;
-  border-radius: 20px;
-  overflow: hidden;
-}
 
 .tabela .interface {
   padding: 40px 4%;
 }
 
-.tabela table {
-  border-radius: 1rem;
-  padding: 0.3rem;
-}
+
 
 .tabela table tr td,
 th {
@@ -177,7 +178,7 @@ th {
   text-align: center;
   font-size: 1rem;
   font-family: var(--fontTxt);
-  border-radius: 10px;
+  
 }
 
 .tabela table tr .data {
