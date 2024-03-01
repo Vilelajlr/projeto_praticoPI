@@ -70,6 +70,10 @@ body {
   height: 100%;
 }
 
+.logo-site img {
+  width: 170px;
+}
+
 .flex {
   display: flex;
 }
@@ -156,7 +160,7 @@ header .menu-desktop .menu {
   font-size: 1rem;
 }
 
-header .menu-desktop a {
+header .menu-desktop li > a {
   font-family: var(--fontTxt);
   text-decoration: none;
   color: var(--txtmenu);
@@ -171,11 +175,9 @@ header .menu-desktop a:hover {
 }
 
 header .menu-desktop #pagina-atual {
-  color: var(--txtgeral);
-  border: 1px solid #f1f1f14d;
-  padding: 5px 6px;
-  border-radius: 30px;
-  box-shadow: 0 0 10px #f1f1f165;
+  font-family: var(--fontTxt);
+  border-radius: 50px;
+  box-shadow: 0 0 8px var(--txtgeral);
 }
 
 /* ESTILO TABELA */
@@ -459,9 +461,25 @@ label {
     justify-content: center;
   }
 
-  header .btn-contato {
-    display: none;
+  .btn-contato a{
+    font-family: var(--fontTxt);
+    text-decoration: none;
+    color: var(--txtmenu);
+    background-color: transparent;
+    padding: 1rem;
+    display: block;
+    transition: 0.2s;
+    padding: 1rem 0;
+    margin-inline: 5rem;
+    border-bottom: 0.0625rem solid #8f8e8e4c;
+    border-radius: 50px;
   }
+
+  .btn-contato a:hover {
+    transform: none;
+    box-shadow: none;
+  }
+
 
   header .menu-desktop .menu {
     display: block;

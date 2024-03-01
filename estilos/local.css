@@ -32,6 +32,10 @@ body {
     height: 100%;
 }
 
+.logo-site img {
+    width: 180px;
+  }
+
 .flex {
     display: flex;
 }
@@ -113,7 +117,7 @@ header .menu-desktop .menu {
     font-size: 1rem;
 }
 
-header .menu-desktop a {
+header .menu-desktop li > a {
     font-family: var(--fontTxt);
     text-decoration: none;
     color: var(--txtmenu);
@@ -189,24 +193,23 @@ iframe {
     justify-content: center;
     flex-wrap: wrap;
     gap: 50px;
-}
-
-.hoteis .acomodacoes {
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-    padding: 20px;
-    border-radius: 30px;
-    box-shadow: 0 0 30px #00000040;
-    transition: 0.2s;
 }
 
-.hoteis .acomodacoes img {
-    width: 100px;
-    height: 130px;
+.fotos{
+    display: flex;
+    gap: 50px;
+    
 }
+
+.hoteis .img-ufu-salas img {
+    width: 300px;
+    height: 200px;
+    border-radius: 30px;
+    box-shadow:  0 0 30px #00000040;
+}
+
+
 
 .hoteis .acomodacoes:hover {
     transform: scale(1.1);
@@ -323,9 +326,24 @@ iframe {
         justify-content: center;
     }
 
-    header .btn-contato {
-        display: none;
-    }
+    .btn-contato a{
+        font-family: var(--fontTxt);
+        text-decoration: none;
+        color: var(--txtmenu);
+        background-color: transparent;
+        padding: 1rem;
+        display: block;
+        transition: 0.2s;
+        padding: 1rem 0;
+        margin-inline: 5rem;
+        border-bottom: 0.0625rem solid #8f8e8e4c;
+        border-radius: 50px;
+      }
+    
+      .btn-contato a:hover {
+        transform: none;
+        box-shadow: none;
+      }
 
     header .menu-desktop .menu {
         display: block;
@@ -408,6 +426,12 @@ iframe {
 
     .como-chegar .img-monte-carmelo img {
         width: 100%;
+    }
+
+    .fotos{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
     }
 
 }

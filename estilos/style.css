@@ -32,6 +32,10 @@ body {
   height: 100%;
 }
 
+.logo-site img {
+  width: 180px;
+}
+
 .flex {
   display: flex;
 }
@@ -114,7 +118,7 @@ header .menu-desktop .menu {
   font-size: 1rem;
 }
 
-header .menu-desktop a {
+header .menu-desktop  li > a {
   font-family: var(--fontTxt);
   text-decoration: none;
   color: var(--txtmenu);
@@ -370,9 +374,27 @@ header .menu-desktop #pagina-atual {
     justify-content: center;
   }
 
-  header .btn-contato {
-    display: none;
+  .btn-contato a{
+    font-family: var(--fontTxt);
+    text-decoration: none;
+    color: var(--txtmenu);
+    background-color: transparent;
+    padding: 1rem;
+    display: block;
+    transition: 0.2s;
+    padding: 1rem 0;
+    margin-inline: 5rem;
+    border-bottom: 0.0625rem solid #8f8e8e4c;
+    border-radius: 50px;
   }
+
+  .btn-contato a:hover {
+    transform: none;
+    box-shadow: none;
+  }
+
+
+ 
 
   header .menu-desktop .menu {
     display: block;
