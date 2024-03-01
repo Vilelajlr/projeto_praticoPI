@@ -374,7 +374,7 @@ header .menu-desktop #pagina-atual {
     justify-content: center;
   }
 
-  .btn-contato a{
+  header .btn-contato a{
     font-family: var(--fontTxt);
     text-decoration: none;
     color: var(--txtmenu);
@@ -388,7 +388,7 @@ header .menu-desktop #pagina-atual {
     border-radius: 50px;
   }
 
-  .btn-contato a:hover {
+  header .btn-contato a:hover {
     transform: none;
     box-shadow: none;
   }
