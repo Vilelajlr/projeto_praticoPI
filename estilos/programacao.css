@@ -151,10 +151,68 @@ header .menu-desktop #pagina-atual {
   box-shadow: 0 0 10px #f1f1f165;
 }
 
+/* Estilo topo */
+
+.topo .interface{
+  padding: 40px 4%;
+  max-width: 1050px;
+  
+}
+
+.topo .flex{
+  flex-direction: column;  
+  align-items: center;
+  justify-content: center;
+}
+
+.topo{
+  background-color: var(--txtgeral);
+  box-shadow: 0 0 30px #00000084;
+}
+
+.topo p{
+  font-size: 1rem;
+  font-family: var(--fontTxt);
+  line-height: 1rem;
+  text-align: left;
+  text-indent: 1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+
+
+.btn-inscricao-site{
+  text-align: center;
+  margin-top: 20px;
+}
+
+.btn-inscricao-site #btn-inscricao{
+  padding: 10px 15px;
+  border: 0;
+  background-color: var(--txtdestaque);
+  border-radius: 40px;
+  font-family: var(--fontTxt);
+  font-size: 1rem;
+  font-weight: 700;
+  transition: 0.2s;
+  text-decoration: none;
+  color: #000;
+  display: inline-block;
+}
+
+
+
+.btn-inscricao-site #btn-inscricao:hover{
+  transform: scale(1.1);
+  box-shadow: 0 0 10px var(--txtdestaque);
+  color: var(--txtmenu);
+}
+
 /* ESTILO TABELA */
 
 main {
-  max-width: 1280px;
+  /* max-width: 1280px; */
   margin: auto;
 }
 
@@ -184,6 +242,8 @@ th {
 .tabela table tr .data {
   background-color: var(--txtdestaque);
 }
+
+
 
 /* ESTILO FOOTER */
 .rodape {
